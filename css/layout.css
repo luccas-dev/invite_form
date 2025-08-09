@@ -1,19 +1,21 @@
 body {
     background-color: var(--shape-background);
     overflow: hidden;
+
+    margin: 1.25rem;
 }
 
 #app {
     display: grid;
-    grid-template-columns: 32.25% 67.75%;
+    grid-template-columns: 32.25% 67.74%;
 
     height: 100vh;
-    margin: 1.25rem;
 }
 
 aside {
+    max-width: 25rem;
+
     & .aside-container {
-        max-width: 25rem;
         position: relative;
         
         & > #background {
@@ -45,5 +47,16 @@ aside {
                 color: var(--text-heading);
             }
         }
+    }
+}
+
+main {
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+    padding: 5rem 8.125rem;
+
+    & h2 {
+        font: var(--heading-md);
+        color: var(--text-heading);
     }
 }

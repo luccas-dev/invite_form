@@ -24,7 +24,63 @@
                 </header>
             </div>
         </aside>
-        <main></main>
+        <main>
+            <div class="main-container">
+                <h2>Crie seu convite</h2>
+
+                <form>
+                    <fieldset id="about-event">
+                        <legend>
+                            <img src="./assets/icons/calendar.svg" alt="Ícone de um calendario">
+                            Sobre o evento
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="title">Título</label>
+                            <input type="text" id="title" name="title" placeholder="Nome do evento">
+                        </div>
+                        <div class="date-wrapper">
+                            <div class="input-wrapper">
+                                <label for="start-date">Início</label>
+                                <input type="datetime" name="start-date" id="start-date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="end-date">Fim</label>
+                                <input type="datetime" name="end-date" id="end-date">
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="input-wrapper">
+                                <legend>Tipo</legend>
+                                <div class="radio-wrapper">
+                                    <div class="radio-inner">
+                                        <label for="in-person">Presencial</label>
+                                        <input type="radio" name="in-person" id="in-person">
+                                    </div>
+                                    <div class="radio-inner">
+                                        <label for="online">Online</label>
+                                        <input type="radio" name="online" id="online">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="location">Local</label>
+                                <input type="text" name="location" id="location">
+                            </div>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea
+                                name="description"
+                                id="description"
+                                placeholder="Escreva sobre os detalhes do evento"
+                                cols="30" rows="5">
+                            </textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
     </div>
 </body>
 </html>
