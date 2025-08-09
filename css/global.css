@@ -38,4 +38,18 @@
     /* TEXT */
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
+
+    /* FONTS */
+    --open-sans: 'Open Sans', sans-serif;
+    --baloo: 'Baloo 2', sans-serif;
+    --leckerli-one: 'Leckerli One', cursive;
+
+    --body-md: 500 16px var(--open-sans);
+    --body-sm: 500 14px var(--open-sans);
+    --body-xs: 500 12px var(--open-sans);
+
+    --heading-md: 600 28px var(--baloo);
+    --heading-sm: 600 18px var(--baloo);
+
+    --logo: 500 40px var(--leckerli-one);
 }
