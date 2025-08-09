@@ -44,12 +44,12 @@
     --baloo: 'Baloo 2', sans-serif;
     --leckerli-one: 'Leckerli One', cursive;
 
-    --body-md: 500 16px var(--open-sans);
-    --body-sm: 500 14px var(--open-sans);
-    --body-xs: 500 12px var(--open-sans);
+    --body-md: 500 1rem var(--open-sans);
+    --body-sm: 500 .875rem var(--open-sans);
+    --body-xs: 500 .75rem var(--open-sans);
 
-    --heading-md: 600 28px var(--baloo);
-    --heading-sm: 600 18px var(--baloo);
+    --heading-md: 600 1.75rem var(--baloo);
+    --heading-sm: 600 1.125rem var(--baloo);
 
-    --logo: 500 40px var(--leckerli-one);
+    --logo: 500 2.5rem var(--leckerli-one);
 }

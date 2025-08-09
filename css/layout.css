@@ -1,0 +1,49 @@
+body {
+    background-color: var(--shape-background);
+    overflow: hidden;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 32.25% 67.75%;
+
+    height: 100vh;
+    margin: 1.25rem;
+}
+
+aside {
+    & .aside-container {
+        max-width: 25rem;
+        position: relative;
+        
+        & > #background {
+            width: 100%;
+            height: auto;
+            border-radius: .75rem;
+
+            position: absolute;
+            z-index: -1;
+        }
+
+        & header {
+            padding: 2rem;
+
+            & #logo {
+                width: 2.81rem;
+                margin-bottom: 16px;
+            }
+
+            
+            & h1 {
+                font: var(--logo);
+                color: var(--pink);
+                margin-bottom: 4px;
+            }
+
+            & p {
+                font: 100 16px var(--open-sans);
+                color: var(--text-heading);
+            }
+        }
+    }
+}
