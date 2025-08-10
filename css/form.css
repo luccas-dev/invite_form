@@ -1,0 +1,61 @@
+fieldset {
+    border: none;
+
+    & > legend {
+        margin-bottom: 1.5rem;
+        font: var(--heading-sm);
+        color: var(--text-heading);
+
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+
+        & img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    & .input-wrapper {
+        width: 100%;
+        display: grid;
+        gap: .75rem;
+        margin-bottom: 16px;
+    }
+
+    & input, & textarea {
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        padding: .8125rem 1rem;
+        font: var(--body-md);
+        color: var(--text-heading);
+
+        &:focus, &:focus-within {
+            outline: 1px solid var(--brand-light);
+            
+            &::placeholder {
+                color: var(--text-heading);
+            }
+        }
+    }
+
+    & label {
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    & .date-wrapper {
+        display: flex;
+        gap: 1rem;
+
+        & input[type="datetime-local"] {
+            color: var(--input-placeholder);
+            text-transform: uppercase;
+
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+            }
+        }
+    }
+}

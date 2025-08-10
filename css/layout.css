@@ -54,9 +54,11 @@ main {
     background-color: var(--shape-body);
     border-radius: .75rem;
     padding: 5rem 8.125rem;
+    overflow: auto;
 
     & h2 {
         font: var(--heading-md);
         color: var(--text-heading);
+        margin-bottom: 2.5rem;
     }
 }
