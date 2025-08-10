@@ -20,7 +20,7 @@ fieldset {
         width: 100%;
         display: grid;
         gap: .75rem;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     & input, & textarea {
