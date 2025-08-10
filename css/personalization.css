@@ -34,7 +34,7 @@
     }
 
     &:has(:checked) {
-        outline: .125rem solid var(--brand-light);
+        outline: .1875rem solid var(--brand-light);
         border-radius: 50%;
     }
 }
