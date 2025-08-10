@@ -16,7 +16,7 @@ fieldset {
         }
     }
 
-    & .input-wrapper {
+    & .input-wrapper, & .textarea-wrapper {
         width: 100%;
         display: grid;
         gap: .75rem;
