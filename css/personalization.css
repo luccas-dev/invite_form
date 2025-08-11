@@ -46,4 +46,42 @@
 .theme-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+
+    
+    & .theme-inner {
+        display: grid;
+        gap: .5rem;
+        justify-items: center;
+
+        background-color: var(--shape-button);
+        border-radius: .5rem;
+        padding: .25rem;
+
+        position: relative;
+
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        & img {
+            width: 100%;
+        }
+
+        & label {
+            margin-bottom: .25rem;
+        }
+
+        &:hover {
+            background-color: var(--shape-hover);
+        }
+
+        &:has(:checked) {
+            outline: .125rem solid var(--brand-light);
+        }
+    }
 }
