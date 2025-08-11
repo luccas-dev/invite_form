@@ -9,32 +9,41 @@
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     gap: .75rem;
-}
 
-.color-inner {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: var(--shape-button);
-    padding: .375rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    & input[type="radio"] {
-        width: 1.75rem;
-        height: 1.75rem;
+    & .color-inner {
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 50%;
-        padding: 0;
+        background-color: var(--shape-button);
+        padding: .375rem;
 
-        &:focus, &:focus-within {
-            outline: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & input[type="radio"] {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            padding: 0;
+
+            &:focus, &:focus-within {
+                outline: 0;
+            }
+        }
+
+        &:hover {
+            background-color: var(--shape-hover);
+        }
+
+        &:has(:checked) {
+            outline: .1875rem solid var(--brand-light);
+            border-radius: 50%;
         }
     }
+}
 
-    &:has(:checked) {
-        outline: .1875rem solid var(--brand-light);
-        border-radius: 50%;
-    }
+.theme-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
