@@ -114,3 +114,21 @@ fieldset {
         }
     }
 }
+
+input {
+    &:invalid {
+        border: .125rem solid var(--danger);
+    }
+
+    &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        color: var(--danger);
+        font: var(--body-xs);
+    }
+
+    &:not(:focus):valid + .error {
+        display: none;
+    }
+}

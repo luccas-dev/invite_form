@@ -1,0 +1,12 @@
+#contact-data {
+    & .input-wrapper, & .email-wrapper, & .phone-wrapper {
+        display: grid;
+        gap: .75rem;
+    }
+
+    & .contact-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
