@@ -84,8 +84,7 @@
                                 name="description"
                                 id="description"
                                 placeholder="Escreva sobre os detalhes do evento"
-                                cols="30" rows="5">
-                            </textarea>
+                                cols="30" rows="5"></textarea>
                         </div>
                     </fieldset>
 
@@ -201,18 +200,25 @@
                         </div>
 
                         <div class="input-wrapper">
-                            <div class="slider-wrapper">
-                                <label>Estilo</label>
-                                <div class="slider-inner">
-                                    <div class="slider"></div>
-                                    <span>Escuro</span>
+                            <div class="details-wrapper">
+                                <div class="slider-wrapper">
+                                    <label>Estilo</label>
+                                    <div class="slider-inner">
+                                        <div class="slider"></div>
+                                        <span>Escuro</span>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="cover-photo-wrapper">
-                                <label>Foto de capa</label>
-                                <div class="cover-photo-inner">
-                                    <input type="file" name="cover-photo" id="cover-photo">
+    
+                                <div class="cover-photo-wrapper">
+                                    <label>Foto de capa</label>
+                                    <div class="cover-photo-inner">
+                                        <div class="btn-send-file">
+                                            <img src="./assets/icons/upload-default.svg" alt="Ícone de upload cinza">
+                                            <span>Selecionar</span>
+                                        </div>
+                                        <span>Nenhum arquivo selecionado</span>
+                                        <input type="file" name="cover-photo" id="cover-photo">
+                                    </div>
                                 </div>
                             </div>
                         </div>
