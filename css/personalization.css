@@ -109,7 +109,7 @@
 
             position: relative;
             padding: .25rem;
-
+            
             &::before {
                 content: "";
                 width: 1.5rem;
@@ -119,6 +119,7 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
+                animation: slide-to-left .8s forwards;
             }
 
             &.active {
@@ -126,7 +127,8 @@
 
                 &::before {
                     background-color: var(--text-heading);
-                    right: .25rem;
+
+                    animation: slide-to-right .8s forwards;
                 }
             }
         }
@@ -182,5 +184,33 @@
             inset: 0;
             opacity: 0;
         }
+    }
+}
+
+@keyframes slide-to-right {
+    0% {
+        left: .25rem;
+    }
+
+    50% {
+        left: 2rem;
+    }
+
+    100% {
+        right: .25rem;
+    }
+}
+
+@keyframes slide-to-left {
+    0% {
+        right: .25rem;
+    }
+
+    50% {
+        right: 2rem;
+    }
+
+    100% {
+        left: .25rem;
     }
 }
